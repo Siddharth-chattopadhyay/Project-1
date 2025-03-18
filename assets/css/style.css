@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primary-color: #4F7661;
+    --gradient-first-color: #ffa800;
+    --secondary-color: #C2DCD0;
+    --third-color: #DAEEE5;
+    --fourth-color: #8EB2A2;
+    --dark-color: #000;
+    --body-bg-color: #fff;
+    --primary-darker-10-color: #4F7661;
+    --primary-darker-20-color: #3C5A4A;
+    --primary-darker-30-color: #1A2720;
+    --primary-darker-40-color: #131D18;
+    --primary-color-rgb: 79, 118, 97;
+    --gradient-first-color-rgb: 255, 168, 0;
+    --secondary-color-rgb: 194, 220, 208;
+    --third-color-rgb: 218, 238, 229;
+    --fourth-color-rgb: 142, 178, 162;
+    --dark-color-rgb: 0, 0, 0;
+    --body-bg-color-rgb: 255, 255, 255;
+}
+
+header > p{
+    font-family: "Tenor Sans"
+}
+
+header > div{
+    font-family: "Public Sans";
+}
