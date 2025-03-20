@@ -3,96 +3,49 @@
     box-sizing: border-box;
 }
 
-
 :root{
-    --primary-color: #4F7661;
-    --gradient-first-color: #ffa800;
-    --secondary-color: #C2DCD0;
-    --third-color: #DAEEE5;
-    --fourth-color: #8EB2A2;
-    --dark-color: #000;
-    --body-bg-color: #fff;
-    --primary-darker-10-color: #4F7661;
-    --primary-darker-20-color: #3C5A4A;
-    --primary-darker-30-color: #1A2720;
-    --primary-darker-40-color: #131D18;
     --primary-color-rgb: 79, 118, 97;
-    --gradient-first-color-rgb: 255, 168, 0;
     --secondary-color-rgb: 194, 220, 208;
-    --third-color-rgb: 218, 238, 229;
-    --fourth-color-rgb: 142, 178, 162;
-    --dark-color-rgb: 0, 0, 0;
-    --body-bg-color-rgb: 255, 255, 255;
 }
 
-a{
-    text-decoration: none;
-}
-
-header > div{
+header .row, header .childrow{
     display: flex;
-    padding: 10px;
 }
 
+header .row{
+    justify-content: space-between;
+    padding: 11px;
+    background-color: rgb(var(--secondary-color-rgb));
+}
 
-header > div > div > ul{
+header .row ul{
     display: flex;
+}
+
+header .row ul li a{
+    color: rgb(var(--primary-color-rgb));
+    font-size: 18px;
+}
+
+header .row ul li{
+    padding-left: 20px;
+}
+
+header .row .childrow ul{
+    padding-left: 0;
     list-style: none;
-    margin-left: 20px;
 }
 
-span{
-    margin-left: 8px;
+header .row .div-2 ul li span, header .row .div-2 ul li i{
+    padding-left: 10px;
+    color: rgb(var(--primary-color-rgb));
 }
 
-header > div > div > ul:first-child{
-    padding-left: 0px;
-}
-header > div > div > ul > li:not(:last-child){
-    padding-right: 20px;
+header .row .div-2 ul li span{
+    font-family: "Public Sans";
+    font-weight: 500;
 }
 
-.justify-start{
-    justify-content: flex-start;
-}
-
-.spacing{
-    width: 5%;
-}
-
-.col-1{
-    width: 8.3333%;
-}
-.col-2{
-    width: 16.6666%;
-}
-.col-3{
-    width: 25%;
-}
-.col-4{
-    width: 33.3333%;
-}
-.col-5{
-    width: 41.6666%;
-}
-.col-6{
-    width: 50%;
-}
-.col-7{
-    width: 58.3333%;
-}
-.col-8{
-    width: 66.6666%;
-}
-.col-9{
-    width: 75%;
-}
-.col-10{
-    width: 83.3333%;
-}
-.col-11{
-    width: 91.6666%;
-}
-.col-12{
-    width: 100%;
+header .row .div-2 ul li a{
+    text-decoration: none;
 }
