@@ -96,6 +96,7 @@ header .row .div-2 ul li a{
     position: absolute;
     top: 100%;
     background-color: rgb(var(--box-color-rgb));
+    transform: translateY(10%);
 }
 
 .header-2 .dropdown .sub > ul > li > a{
@@ -115,6 +116,7 @@ header .row .div-2 ul li a{
 .header-2 .dropdown:hover > .sub{
     visibility: visible;
     opacity: 1;
+    transform: translateY(0%);
 }
 
 .mag > a > i{
@@ -159,4 +161,10 @@ header .row .div-2 ul li a{
     left: 100%;
     top: 0px;
     opacity: 0;
+}
+
+.subblog{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
