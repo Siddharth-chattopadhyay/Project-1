@@ -6,5 +6,5 @@
   /* cyrillic */
   @font-face {
     font-family: 'Tenor Sans';
-    src: url(https://fonts.gstatic.com/s/tenorsans/v19/bx6ANxqUneKx06UkIXISn3F4Ck-L2qM2VQ.woff2) format('woff2');
+    src: url(../fonts/TenorSans-Regular.ttf) format('ttf');
   }
