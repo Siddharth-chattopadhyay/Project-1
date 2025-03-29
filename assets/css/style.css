@@ -160,7 +160,7 @@ header .row .div-2 ul li a{
     align-items: center;
 }
 
-.header-2 > ul{
+.header-2 > nav > ul{
     list-style: none;
     padding-left: 0px;
     display: flex;
@@ -168,13 +168,13 @@ header .row .div-2 ul li a{
     align-items: center;
 }
 
-.sub > ul{
+.sub > nav > ul{
     list-style: none;
     padding-left: 0px;
 }
 
 
-.header-2 > ul > li  a{
+.header-2 > nav > ul > li  a{
     text-decoration: none;
     color:  rgb(var(--links-color-rgb));
     font-family: "Public Sans", "Sans Serif";
@@ -196,7 +196,7 @@ header .row .div-2 ul li a{
     z-index: 1;
 }
 
-.header-2 .dropdown .sub > ul > li > a{
+.header-2 .dropdown .sub > nav > ul > li > a{
     display: block;
     box-sizing: content-box;
     text-decoration: none;
@@ -240,6 +240,51 @@ header .row .div-2 ul li a{
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+.call-detail > .book-a-session-first{
+    color: var(--primary-color);
+    font-family: "Public Sans", Sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.call-detail > .tel{
+    color: var(--links-color);
+    font-family: "Tenor Sans", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: -1px;
+}
+
+.header-2 .cart{
+    padding-right: 36px;
+    border-right: 1px solid var(--secondary-color);
+}
+
+.header-2 .cart a > .cart-icon{
+    position: relative;
+}
+
+.header-2 .cart a > .cart-icon::before{
+    content: '0';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 8px;
+    line-height: 10px;
+    border-radius: 50%;
 }
 
 .plus{
@@ -306,35 +351,47 @@ header .row .div-2 ul li a{
     line-height: 1;
 }
 
-.banner .container > p{
+.banner > .container > p{
     font-size: 20px;
     font-family: "Public Sans";
     margin-bottom: 50px;
 }
 
-.banner .btn-container{
+.banner > .btn-container{
     display: flex;
     column-gap: 30px;
     padding-left: 40px;
     align-items: center;
 }
 
-.banner .btn-container .btn{
+.banner .btn-container > .btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.5s ease;
     width: 170px;
     height: 50px;
-    border: 2px solid white;
-    text-decoration: none;
-    color: var(--primary-color);
-    padding: 15px;
-    text-align: center;
     background-color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 15px;
     border-radius: 50px;
-    transition: all 0.5s ease;
 }
 
-.banner .btn-container .btn:hover{
+.banner .btn-container > .btn:hover{
     background-color: transparent;
+}
+
+.banner .btn-container > .btn > p{
+    color: var(--primary-color);
+}
+
+.banner > .btn-container >  .btn:hover > p{
     color: white;
+}
+
+.banner > .btn-container >  .btn:hover > .svg > svg{
+    fill: white;
 }
 
 .banner .btn-container .ytplay{
@@ -379,11 +436,11 @@ header .row .div-2 ul li a{
     column-gap: 80px;
 }
 
-.banner-2 .b-1{
+.banner-2 > .b-1{
     position: relative;
 }
 
-.banner-2 .b-1 .box-title{
+.banner-2 > .b-1 > .box-title{
     max-width: 350px;
     position: absolute;
     z-index: 3;
@@ -391,7 +448,7 @@ header .row .div-2 ul li a{
     left: 30px;
 }
 
-.banner-2 .b-1 .box-title .t-1, .banner-2 .b-1 .box-title .t-2{
+.banner-2 > .b-1 > .box-title > .t-1, .banner-2 > .b-1 > .box-title > .t-2{
     color: white;
 }
 
